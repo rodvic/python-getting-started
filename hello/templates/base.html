@@ -9,7 +9,8 @@
     .jumbotron {
         background: #532f8c;
         color: white;
-        padding-bottom: 80px
+        padding-bottom: 80px;
+        background-image: url({% static 'IMAG0246.jpg'%});
     }
     .jumbotron .btn-primary {
         background: #845ac7;
@@ -44,15 +45,6 @@
   </style>
 </head>
 <body>
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="{% static 'lang-logo.png'%}">
-    </a>
-    <h1>Alejandro Rodríguez Vicente</h1>
-    <p>Ingeniero Informático</p>
-  </div>
-</div>
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container">
     <ul class="nav navbar-nav">
@@ -71,6 +63,12 @@
     </ul>
   </div>
 </nav>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Alejandro Rodríguez Vicente</h1>
+    <p>Ingeniero Informático</p>
+  </div>
+</div>
 
 {% block content %}{% endblock %}
 
