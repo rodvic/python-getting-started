@@ -9,7 +9,8 @@
     .jumbotron {
         background: #532f8c;
         color: white;
-        padding-bottom: 80px
+        padding-bottom: 80px;
+        background-image: url('../static/IMAG0246.jpg');
     }
     .jumbotron .btn-primary {
         background: #845ac7;
@@ -21,7 +22,12 @@
     .jumbotron p {
         color: #d9ccee;
         max-width: 75%;
-        margin: 1em auto 2em
+        margin: 5px;
+        background-color: #000000;
+        margin: auto;
+    }
+    .jumbotron h1{
+      font-weight: bold;
     }
     .navbar+.jumbotron {
         margin-top: -20px
@@ -39,25 +45,30 @@
     .jumbotron .lang-logo img {
         max-width: 100%
     }
-
+    .titulo {
+    	color:#F90;
+    	padding: 5px;
+    	font-size:25px;
+    	font-weight: bold;
+    	text-transform:uppercase;
+    	line-height: 20px;
+    }
+    .texto{
+    	font-size: 16px;
+    	padding-left: 5px;
+    }
+    .contenedor{
+      background-color: #EAECEB;
+    }
 
   </style>
 </head>
 <body>
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="{% static 'lang-logo.png'%}">
-    </a>
-    <h1>Alejandro Rodríguez Vicente</h1>
-    <p>Ingeniero Informático</p>
-  </div>
-</div>
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container">
     <ul class="nav navbar-nav">
       <li class="active">
-        <a href="inicio.html">INICIO</a>
+        <a href="index.html">INICIO</a>
       </li>
       <li class="active">
         <a href="contacto.html">CONTACTO</a>
@@ -71,6 +82,12 @@
     </ul>
   </div>
 </nav>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Alejandro Rodríguez Vicente</h1>
+    <p>Ingeniero Informático</p>
+  </div>
+</div>
 
 {% block content %}{% endblock %}
 
